@@ -1,3 +1,6 @@
+# Created by FoxSinOfGreed1729
+# Many thanks to Zaid Sabih and udemy.com
+
 import scapy.all as scapy
 import optparse
 
