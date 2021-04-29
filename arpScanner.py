@@ -2,7 +2,7 @@
 # Many thanks to Zaid Sabih and udemy.com
 
 import scapy.all as scapy
-import optparse
+import argparse
 
 
 # Scans a specific host or an entire network, but not recommended for entire network
@@ -51,9 +51,9 @@ def arpScanBroadcast(ip):
 
 
 def get_arguments():
-    parser = optparse.OptionParser()
+    parser = argparse.OptionParser()
     parser.add_option('-i', '--ip', dest='ip_addr', help='The local IP address or IP Address range to scan')
-    (options, arguments) = parser.parse_args()
+    options = parser.parse_args()
     return options
 
 # --------------------------------------------------------
